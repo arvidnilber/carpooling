@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vad ska jag swisha?</title>
+
+    <!-- Styling --> 
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materalize.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=sv"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	<script type="text/javascript" src="./js/geocode.js"></script>
+	<script type="text/javascript" src="./js/travelprice.js"></script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+	<script type="text/javascript" src="./js/default.js"></script>
+    <script type="text/javascript" src="./js/waves.js"></script>
+</head>
+<body>
+   
+    <!-- Header for desktop -->
+    <section id="pc-header" role="heading">
+        <div class="pc-header">
+            <p>Vad ska jag swisha?</p>
+        </div>
+    </section>
+    
+    
+    <!-- Header for mobile -->
+    <section id="mobile-header" role="heading">
+        <div class="mobile-header">
+            <p>Vad ska jag swisha?</p>
+        </div>
+    </section>
+    
+    <!-- The stuff you are here for -->
+    <section id="main">
+        <div id="form_container" class="container">
+                <form method="post" action="./" onsubmit="update_route(); return false;" class="container">
+                    <!--<select name="num_people" id="form_num_people" class="mobile-only">
+                        <option value="2">2 personer</option>
+                        <option value="3">3 personer</option>
+                        <option value="4">4 personer</option>
+                        <option value="5">5 personer</option>
+                        <option value="6">6 personer</option>
+                        <option value="7">7 personer</option>
+                        <option value="8">8 personer</option>
+                        <option value="9">9 personer</option>
+                        <option value="10">10 personer</option>
+                        <option value="11">11 personer</option>
+                        <option value="12">12 personer</option>
+                    </select>
+                    -->
+                     <div class="row">
+                        <div class="col s12">
+                            <b>Hur många ska med?</b>
+                          <div>
+                            <input name="num_people" type="text" id="form_num_people" size="17" class="inputs" placeholder="Antal personer">
+                          </div>
+                        </div>
+                        <div class="col s6">
+                            <b>Var åker ni ifrån?</b>
+                            <div class="input-field inline">
+                            <input name="location_from" placeholder="Ort" class="input" type="text" id="form_location_from" onblur="geocode('from', this.value);"/>
+                          </div>
+                        </div>
+                        <div class="col s12">
+                            <b>Var ska ni någonstans?</b>
+                            <div class="input-field inline">
+                            <input name="location_to" placeholder="Ort" class="input"  type="text" id="form_location_to" onblur="geocode('to', this.value);"/>
+                          </div>
+                        </div>
+                        <div class="col s12">
+                            <b>Vad drar eran bil? (blandad körning)</b>
+                            <div class="input-field inline">
+                            <input name="consumption"  size="6" class="inputs" placeholder="liter/mil" type="text" id="form_consumption"/>
+                          </div>
+                        </div>
+                        <div class="col s12">
+                            <b>Vad kommer bensinen att kosta?</b>
+                            <div class="input-field inline">
+                            <input name="price_fuel" placeholder="kr/liter" size="6" class="inputs"  type="text" id="form_price_fuel"/>
+                          </div>
+                        </div>
+                    
+                    <button type="submit" id="btn-submit" class="button waves-effect waves-light waves-float" id="form_submit" value="Vad kostar resan?">
+                        Se resultatet
+                    </button>
+                    </div>
+                         </form>
+        </div>
+        <div id="form_information">
+        </div>
+    </section>   
+    
+    <!-- Map --> 
+    <div id="map_canvas">
+        <script type="text/javascript">
+            print_map();
+        </script>
+    </div>
+</body>
+</html>

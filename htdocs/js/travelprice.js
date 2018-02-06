@@ -15,11 +15,9 @@ var g_directions_status;
  * @param price_fuel Literpris för bränslet
  */
 
-function get_path_and_info(location_from, location_to, num_people, consumption, price_fuel)
-{
+function get_path_and_info(location_from, location_to, num_people, consumption, price_fuel) {
 	// Se efter om gamla koordinaterna inte är samma som de inmatade
-	if (!(g_city_from == location_from && g_city_to == location_to))
-	{
+	if (!(g_city_from == location_from && g_city_to == location_to)) {
 		g_city_from = location_from;
 		g_city_to = location_to;
 		

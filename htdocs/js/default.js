@@ -32,6 +32,7 @@ function is_numeric(str)
  * Denna körs när formuläret postas.
  * @return void
  */
+
 function update_route()
 {
 	if (!validate_form())

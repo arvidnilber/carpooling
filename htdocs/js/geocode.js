@@ -86,6 +86,7 @@ function geocode(type, address)
  * @param results Array med resultat, given från google.maps.Geocoder.geocode()
  * @return void
  */
+
 function handle_multiple_results(type, results)
 {
 	clear_markers();
@@ -267,6 +268,7 @@ function clear_markers()
 	g_markers = new Array();
 	g_bounds = new google.maps.LatLngBounds();
 }
+
 
 /**
  * Lägger till en markör på angivna koordinater
