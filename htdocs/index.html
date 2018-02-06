@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FF6555">
+
     <title>Vad ska jag swisha?</title>
 
     <!-- Styling --> 
@@ -42,53 +44,39 @@
     <section id="main">
         <div id="form_container" class="container">
                 <form method="post" action="./" onsubmit="update_route(); return false;" class="container">
-                    <!--<select name="num_people" id="form_num_people" class="mobile-only">
-                        <option value="2">2 personer</option>
-                        <option value="3">3 personer</option>
-                        <option value="4">4 personer</option>
-                        <option value="5">5 personer</option>
-                        <option value="6">6 personer</option>
-                        <option value="7">7 personer</option>
-                        <option value="8">8 personer</option>
-                        <option value="9">9 personer</option>
-                        <option value="10">10 personer</option>
-                        <option value="11">11 personer</option>
-                        <option value="12">12 personer</option>
-                    </select>
-                    -->
-                     <div class="row">
-                        <div class="col s12">
+                     <div>
+                        <div>
                             <b>Hur många ska med?</b>
-                          <div>
-                            <input name="num_people" type="text" id="form_num_people" size="17" class="inputs" placeholder="Antal personer">
-                          </div>
+                              <div>
+                                <input name="num_people" type="text" id="form_num_people" size="16w" class="inputs" placeholder="Antal personer">
+                              </div>
                         </div>
-                        <div class="col s6">
+                        <div>
                             <b>Var åker ni ifrån?</b>
-                            <div class="input-field inline">
+                            <div>
                             <input name="location_from" placeholder="Ort" class="input" type="text" id="form_location_from" onblur="geocode('from', this.value);"/>
                           </div>
                         </div>
-                        <div class="col s12">
+                        <div>
                             <b>Var ska ni någonstans?</b>
-                            <div class="input-field inline">
+                            <div>
                             <input name="location_to" placeholder="Ort" class="input"  type="text" id="form_location_to" onblur="geocode('to', this.value);"/>
                           </div>
                         </div>
-                        <div class="col s12">
+                        <div>
                             <b>Vad drar eran bil? (blandad körning)</b>
-                            <div class="input-field inline">
+                            <div>
                             <input name="consumption"  size="6" class="inputs" placeholder="liter/mil" type="text" id="form_consumption"/>
                           </div>
                         </div>
-                        <div class="col s12">
-                            <b>Vad kommer bensinen att kosta?</b>
-                            <div class="input-field inline">
+                        <div>
+                            <b>Vad kommer bränslet att kosta?</b>
+                            <div>
                             <input name="price_fuel" placeholder="kr/liter" size="6" class="inputs"  type="text" id="form_price_fuel"/>
                           </div>
                         </div>
                     
-                    <button type="submit" id="btn-submit" class="button waves-effect waves-light waves-float" id="form_submit" value="Vad kostar resan?">
+                    <button type="submit" id="btn-submit" class="button waves-effect waves-light" id="form_submit" value="Vad kostar resan?">
                         Se resultatet
                     </button>
                     </div>

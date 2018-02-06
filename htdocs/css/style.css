@@ -1,9 +1,12 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: fff;
+    background-color: #FF6555;
 }
 
-textarea, input, button { outline: none; }
+textarea, input, button { 
+    outline: none; 
+}
+
 
 
 .pc-header {
@@ -66,6 +69,11 @@ textarea, input, button { outline: none; }
     text-align: center;
     margin: 0 auto;
     width: 90vw;
+    color: white;
+}
+
+.container b {
+    font-weight: 500;
 }
 
 #form_information {
@@ -94,19 +102,19 @@ textarea, input, button { outline: none; }
     box-sizing: border-box;
     border:0px;
     outline: none;
+    background-color: transparent;
     font-size: 14px;
     font-weight: 300;
-    border-bottom:2px solid grey;
-    transition: 0.2s;
+    border-bottom:2px solid white;
+    transition: 0.5s;
     text-align: center;
     margin-bottom: 10px;
     height:40px;
-
+    color: white;
 }
 
-
 .inputs:focus {
-    border-bottom: 2px solid aqua;
+    border-bottom: 2px solid #2ecc71;
     transition: 0.2s;
 }
 
@@ -114,21 +122,29 @@ textarea, input, button { outline: none; }
     box-sizing: border-box;
     outline: none;
     border:0px;
+    background-color: transparent;
     margin-bottom: 10px;
     text-align: left;
     font-size: 14px;
     font-weight: 300;
-    border-bottom:2px solid grey;
-    transition: 0.2s;
+    border-bottom:2px solid white;
+    transition: 0.5s;
     height:40px;
+    color: white;
 }
 
 .input:focus {
-    border-bottom: 2px solid aqua;
+    border-bottom: 2px solid #2ecc71;
     transition: 0.2s;
 }
 
+.input::placeholder {
+    color:#bdc3c7;
+}
 
+.inputs::placeholder {
+    color:#bdc3c7;
+}
 #form_location_from {
     width:150px;
 }
@@ -138,9 +154,14 @@ textarea, input, button { outline: none; }
 }
 
 #map_canvas {
-	width: 98vw;
+	width: 70vw;
 	height: 565px;
+    border-radius: 5px;
     margin: 0 auto;
+    -webkit-box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.46);
+    box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.46);
+    margin-bottom:20px;
 }
 
 @media screen and (max-width:600px) {
@@ -148,10 +169,21 @@ textarea, input, button { outline: none; }
         height:400px;
         width:90vw;
         margin: 0 auto;
+            margin-bottom:20px;
+
+       -webkit-box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.38);
+        -moz-box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.38);
+        box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.38);
+    }
+    
+    .input {
+        border-bottom: 1px solid white;
+    }
+    .inputs {
+        border-bottom: 1px solid white;
     }
 }
 
-    
 .button {
     position: fixed;
     text-align: center;
@@ -160,27 +192,33 @@ textarea, input, button { outline: none; }
     height:50px;
     margin:0 auto;
     border: 0;
-    background-color: #e74c3c;
+    background-color: #FF6555;
     color: white;
     transition: all ease .5s;
-    -webkit-box-shadow: 0px 0px 21px 9px rgba(0,0,0,0.33);
-    -moz-box-shadow: 0px 0px 21px 9px rgba(0,0,0,0.33);
-    box-shadow: 0px 0px 21px 9px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
     color: white;
     text-align: center;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .button:active {
     transition: all ease .5s;
     background-color: #ff5d4c;
+-webkit-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
+-moz-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
+box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 }
 
 .button:focus {   
     transition: all ease .5s;
     border:0;
     background-color: #ff5d4c;
+-webkit-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
+-moz-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
+box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 }
 
 .button:hover {
@@ -191,27 +229,31 @@ textarea, input, button { outline: none; }
 #btn-submit {
     margin-top:30px;
 }
-.mobile-only {
-    display: none;
+
+#form_information {
+    color:white;
+    width: 500px;
+    line-height: 1.4em;
 }
 
-.desktop-only {
-    display: inline;
-}
 
 @media screen and (max-width:600px) {
     .button {
         width: 40vw;
+        -webkit-box-shadow: 0px 6px 5px 0px rgba(176,73,63,0.54);
+        -moz-box-shadow: 0px 6px 5px 0px rgba(176,73,63,0.54);
+        box-shadow: 0px 6px 5px 0px rgba(176,73,63,0.54);
     }
     
-    .mobile-only {
-        display:inline;
-    }
-    
-    .desktop-only {
-        display: none;
+    #form_information {
+        width: 80vw;
     }
 }
+
+
+
+
+
 
 /*!
  * Waves v0.6.0
