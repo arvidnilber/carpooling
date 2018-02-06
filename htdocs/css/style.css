@@ -227,7 +227,8 @@ box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 }
 
 #btn-submit {
-    margin-top:30px;
+    margin-top:10px;
+    margin-bottom: 20px;
 }
 
 #form_information {
@@ -357,12 +358,11 @@ box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
   background:#FF6555;
   color: white;
   top:0;
-  display: inline;
+  left:0;
+  display: none;
   z-index: 109;
   transition: all ease 1.5s;
-
 }
-
 
 #container {
     height:300px;

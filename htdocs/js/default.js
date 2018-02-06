@@ -3,9 +3,7 @@ $(document).ready(function()
 	g_geocoder = new google.maps.Geocoder();
 	g_bounds = new google.maps.LatLngBounds();
 	g_markers = new Array();
-	
-	$(document).pngFix();
-	
+		
 	$("#form_information").hide();
 	$(".window").hide();
 });
