@@ -194,12 +194,12 @@ textarea, input, button {
     border: 0;
     background-color: #FF6555;
     color: white;
+    text-decoration: none;
     transition: all ease .5s;
     -webkit-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
     -moz-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
     box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
     color: white;
-    text-align: center;
     font-size: 14px;
     font-weight: 500;
 }
@@ -251,10 +251,133 @@ box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 }
 
 
+.spinner{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #f25a41;
+    border-radius: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#preloader {
+  height:100%;
+  width:100%;
+  background:#FF6555;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: 99;
+ }
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#splash {
+  height:100%;
+  width:100%;
+  position: fixed;
+  background:#FF6555;
+  color: white;
+  top:0;
+  display: inline;
+  z-index: 109;
+  transition: all ease 1.5s;
+
+}
 
 
+#container {
+    height:300px;
+    width:400px;
+    margin: 0 auto; 
+    margin-top:40px;
+}
 
+.splash-content {
+    text-align: center;
+}
 
+.splash-content a {
+    line-height: 3.4em;
+}
 /*!
  * Waves v0.6.0
  * http://fian.my.id/Waves

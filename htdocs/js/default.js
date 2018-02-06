@@ -96,3 +96,4 @@ function clear_errors()
 {
 	$('#message').hide();
 }
+
