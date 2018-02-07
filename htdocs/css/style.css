@@ -112,7 +112,7 @@ input:-webkit-autofill {
     background-color: transparent;
     font-size: 14px;
     font-weight: 300;
-    border-bottom:2px solid white;
+    border-bottom:1px solid white;
     transition: 0.5s;
     text-align: center;
     margin-bottom: 10px;
@@ -135,7 +135,7 @@ input:-webkit-autofill {
     text-align: center;
     font-size: 14px;
     font-weight: 300;
-    border-bottom:2px solid white;
+    border-bottom:1px solid white;
     transition: 0.5s;
     height:40px;
     color: white;
