@@ -7,13 +7,15 @@ textarea, input, button {
     outline: none; 
 }
 
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #37474F inset;
-}
 
-/*Change text in autofill textbox*/
+/*Change color of text in autofill textbox*/
+
 input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #37474F inset;
 }
 
 .pc-header {
@@ -243,13 +245,15 @@ input:-webkit-autofill {
 
 #btn-submit {
     margin-top:10px;
-	margin-bottom:25px;
+	margin-bottom:20px;
 }
 
 #form_information {
     color:white;
     width: 500px;
     line-height: 1.4em;
+	margin-bottom: 0px;
+	padding-top: 0px;
 }
 
 
