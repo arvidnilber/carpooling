@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #FF6555;
+    background-color: #37474F;
 }
 
 textarea, input, button { 
@@ -15,7 +15,7 @@ textarea, input, button {
     z-index: 2;
     top: 0;
     width: 100%;
-    background-color: #FF6555;
+    background-color: #263238;
     -webkit-box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.35);
     box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.35);
@@ -37,7 +37,7 @@ textarea, input, button {
     z-index: 2;
     top: 0;
     width: 100%;
-    background-color: #FF6555;
+    background-color: #263238;
     -webkit-box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.35);
     box-shadow: 0px 3px 14px -1px rgba(0,0,0,0.35);
@@ -192,7 +192,7 @@ textarea, input, button {
     height:50px;
     margin:0 auto;
     border: 0;
-    background-color: #FF6555;
+    background-color: #1e88e5;
     color: white;
     text-decoration: none;
     transition: all ease .5s;
@@ -206,7 +206,7 @@ textarea, input, button {
 
 .button:active {
     transition: all ease .5s;
-    background-color: #ff5d4c;
+    background-color: #137fdd;
 -webkit-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 -moz-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
@@ -215,14 +215,14 @@ box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 .button:focus {   
     transition: all ease .5s;
     border:0;
-    background-color: #ff5d4c;
+    background-color: #137fdd;
 -webkit-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 -moz-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 }
 
 .button:hover {
-    background-color: #ff7263;
+    background-color: #3097f2;
     transition: all ease .5s;
 }
 
@@ -241,9 +241,9 @@ box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 @media screen and (max-width:600px) {
     .button {
         width: 40vw;
-        -webkit-box-shadow: 0px 6px 5px 0px rgba(176,73,63,0.54);
-        -moz-box-shadow: 0px 6px 5px 0px rgba(176,73,63,0.54);
-        box-shadow: 0px 6px 5px 0px rgba(176,73,63,0.54);
+        -webkit-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
+        -moz-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
+        box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
     }
     
     #form_information {

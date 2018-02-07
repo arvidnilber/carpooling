@@ -128,6 +128,6 @@ function render_directions()
 function print_travelinfo(num_people, consumption, price_fuel)
 {
 	var travel_info = get_calculated_travelinfo(num_people, consumption, price_fuel);
-	$("#form_information").html("Total resväg för sträckan är <b>"+travel_info["distance"]["kilometers"]+" km</b>. Körtiden beräknas till <b>"+ travel_info["time"]["hours"] + " timmar och " + travel_info["time"]["minutes"] +" minuter</b>. Baserat på en förbrukning av "+consumption+" liter/mil och ett bränslepris på "+price_fuel+" kr/liter landar kostnaden på <b>"+travel_info["cost_per_person"]+" kr</b> per person. Total kostnad är <b>"+travel_info["cost_total"]+" kr</b>.");
+	$("#form_information").html("Den totala resvägen för sträckan är <b>"+travel_info["distance"]["kilometers"]+" km</b>. Körtiden beräknas till <b>"+ travel_info["time"]["hours"] + " timmar och " + travel_info["time"]["minutes"] +" minuter</b>. Baserat på en förbrukning av "+consumption+" liter/mil och ett bränslepris på "+price_fuel+" kr/liter landar kostnaden på <b>"+travel_info["cost_per_person"]+" kr</b> per person. Total kostnad är <b>"+travel_info["cost_total"]+" kr</b>.");
 	$("#form_information").slideDown();
 }
