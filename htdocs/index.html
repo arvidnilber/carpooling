@@ -93,10 +93,31 @@
                         Se resultatet
                     </button>
                     </div>
-                         </form>
+                </form>
+        <div id="multiple_results" class="window">
+						<div class="close">
+							<a href="javascript: $('#multiple_results').hide()">
+								<img src="images/cross.png" alt="Stäng" title="Stäng" />
+							</a>
+						</div>
+						<h2>Ett flertal platser matchar din sökning!</h2>
+						<p>Vi behöver din hjälp för att hitta den plats du är ute efter. Klicka på en plats nedan eller på en av markeringarna på <a href="#map_canvas">kartan</a>.</p>
+						<ul id="result_list"></ul>
+					</div>
+					<div id="message" class="window">
+						<div class="close">
+							<a href="javascript: $('#message').hide()">
+								<img src="images/cross.png" alt="Stäng" title="Stäng" />
+							</a>
+						</div>
+						<h2>Vi är ledsna...</h2>
+						<span id="message_text"></span>
+					</div>
         </div>
         <div id="form_information">
         </div>
+        
+      
     </section>   
     
     <!-- Map --> 

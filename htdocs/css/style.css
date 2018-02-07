@@ -7,7 +7,14 @@ textarea, input, button {
     outline: none; 
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #37474F inset;
+}
 
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
 
 .pc-header {
      position: fixed;
@@ -27,7 +34,7 @@ textarea, input, button {
 }
 
 .pc-header p {
-    margin-left:15px;
+    margin-left:18px;
 }
 
 .mobile-header {
@@ -62,7 +69,7 @@ textarea, input, button {
 }
 
 #main {
-    margin-top:120px;
+    margin-top:100px;
 }
 
 .container {
@@ -86,7 +93,7 @@ textarea, input, button {
 
 @media screen and (max-width:600px) {
     #main {
-        margin-top: 90px;
+        margin-top: 80px;
     }
     
     .container {
@@ -110,11 +117,12 @@ textarea, input, button {
     text-align: center;
     margin-bottom: 10px;
     height:40px;
+    border-radius: 1px;
     color: white;
 }
 
 .inputs:focus {
-    border-bottom: 2px solid #2ecc71;
+    border-bottom: 1px solid #2ecc71;
     transition: 0.2s;
 }
 
@@ -124,22 +132,29 @@ textarea, input, button {
     border:0px;
     background-color: transparent;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     font-weight: 300;
     border-bottom:2px solid white;
     transition: 0.5s;
     height:40px;
     color: white;
+    border-radius: 1px;
 }
 
 .input:focus {
-    border-bottom: 2px solid #2ecc71;
+    border-bottom: 1px solid #2ecc71;
     transition: 0.2s;
 }
 
 .input::placeholder {
     color:#bdc3c7;
+}
+#message
+{
+	border-color: #f00;
+	color: #d00;
+	width: 500px;
 }
 
 .inputs::placeholder {
@@ -178,9 +193,12 @@ textarea, input, button {
     
     .input {
         border-bottom: 1px solid white;
+                border-radius: 1px;
+
     }
     .inputs {
         border-bottom: 1px solid white;
+        border-radius: 1px;
     }
 }
 
@@ -228,7 +246,7 @@ box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 
 #btn-submit {
     margin-top:10px;
-	margin-bottom:20px;
+	margin-bottom:25px;
 }
 
 #form_information {

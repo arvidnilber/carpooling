@@ -71,6 +71,7 @@ function update_route()
  * @param str Meddelande som ska visas
  * @return void
  */
+
 function show_error(type, str)
 {
 	if (type == 'from')
