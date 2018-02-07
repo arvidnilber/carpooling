@@ -124,7 +124,7 @@ input:-webkit-autofill {
 
 .inputs:focus {
     border-bottom: 1px solid #2ecc71;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .input {
@@ -145,14 +145,14 @@ input:-webkit-autofill {
 
 .input:focus {
     border-bottom: 1px solid #2ecc71;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .input::placeholder {
     color:#bdc3c7;
 }
-#message
-{
+
+#message {
 	border-color: #f00;
 	color: #d00;
 	width: 500px;
@@ -161,6 +161,7 @@ input:-webkit-autofill {
 .inputs::placeholder {
     color:#bdc3c7;
 }
+
 #form_location_from {
     width:150px;
 }
@@ -174,9 +175,9 @@ input:-webkit-autofill {
 	height: 565px;
     border-radius: 5px;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.46);
-    -moz-box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.46);
-    box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.36);
+    box-shadow: 0px 1px 25px 5px rgba(0,0,0,0.36);
     margin-bottom:20px;
 }
 
@@ -185,11 +186,8 @@ input:-webkit-autofill {
         height:400px;
         width:90vw;
         margin: 0 auto;
-            margin-bottom:20px;
+        margin-bottom:20px;
 
-       -webkit-box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.38);
-        -moz-box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.38);
-        box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.38);
     }
     
     .input {
@@ -215,9 +213,7 @@ input:-webkit-autofill {
     color: white;
     text-decoration: none;
     transition: all ease .5s;
-    -webkit-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
-    -moz-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
-    box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
+  	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
     font-size: 14px;
     font-weight: 500;
@@ -226,23 +222,23 @@ input:-webkit-autofill {
 .button:active {
     transition: all ease .5s;
     background-color: #137fdd;
--webkit-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
--moz-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 }
 
 .button:focus {   
     transition: all ease .5s;
     border:0;
     background-color: #137fdd;
--webkit-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
--moz-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 }
 
 .button:hover {
     background-color: #3097f2;
     transition: all ease .5s;
+	  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 }
 
 #btn-submit {
@@ -260,9 +256,7 @@ box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 @media screen and (max-width:600px) {
     .button {
         width: 40vw;
-        -webkit-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
-        -moz-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
-        box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.42);
+         	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     
     #form_information {
@@ -297,11 +291,12 @@ box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
 #preloader {
   height:100%;
   width:100%;
-  background:#FF6555;
+  background:#37474F;
   position:fixed;
   left:0;
   top:0;
   z-index: 99;
+  transition: 0.4s;
  }
 
 #loader {

@@ -11,6 +11,7 @@
     <!-- Styling --> 
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materalize.css">
+	    <link rel="stylesheet" href="css/animations.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons" rel="stylesheet">
     
@@ -27,6 +28,9 @@
 
 </head>
 <body>
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
     <div id="splash">
         <div class="splash-content">
          <h1>Vad ska jag swisha?</h1>
@@ -54,7 +58,7 @@
     </section>
     
     <!-- The stuff you are here for -->
-    <section id="main">
+    <section id="main" class="animated fadeIn">
         <div id="form_container" class="container">
                 <form method="post" action="./" onsubmit="update_route(); return false;" class="container">
                      <div>
@@ -95,7 +99,7 @@
                     </div>
                 </form>
         </div>
-        <div id="form_information">
+        <div class="animate fadeInUp"id="form_information">
         </div>
         
       
