@@ -11,7 +11,8 @@
     <!-- Styling --> 
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materalize.css">
-	    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/hover.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons" rel="stylesheet">
     
@@ -41,11 +42,17 @@
         <div id="container"></div>
     </div>
     
-   
     <!-- Header for desktop -->
     <section id="pc-header" role="heading">
         <div class="pc-header">
-            <p>Vad ska jag swisha?</p>
+            <p class="header-logo">Vad ska jag swisha?</p>
+            <nav>
+                <ul>
+                  <li><a href="http://www.bilsvar.se/sv/Sok-bil/" class="waves-effect waves-light hvr-underline-from-center">Vad drar min bil?</a></li>
+                  <li><a href="https://bensinpriser.nu/" class="waves-effect waves-light hvr-underline-from-center">Vad kostar bensinen i Sverige?</a></li>
+                </ul>
+            </nav>
+           
         </div>
     </section>
     
@@ -53,6 +60,19 @@
     <!-- Header for mobile -->
     <section id="mobile-header" role="heading">
         <div class="mobile-header">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                        <ul id="menu">
+                          <a href="#"><li>Hem</li></a>
+                          <a href="#"><li>Om oss</li></a>
+                          <a href="#"><li>Våra resor</li></a>
+                          <a href="#"><li>Kontakt</li></a>
+                          <a href="#"><li>Logga in</li></a>
+                        </ul>
+            </div>
             <p>Vad ska jag swisha?</p>
         </div>
     </section>
@@ -101,8 +121,6 @@
         </div>
         <div id="form_information">
         </div>
-        
-      
     </section>   
     
     <!-- Map --> 
