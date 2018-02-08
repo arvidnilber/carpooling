@@ -207,7 +207,7 @@ input:-webkit-autofill {
     color: #818181;
     display: block;
     transition: 0.3s;
-    border-radius: px;
+    border-radius: 30px;
     width:80vw;
     font-weight: 300;
     height:50px;

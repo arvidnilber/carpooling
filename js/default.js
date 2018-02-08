@@ -26,7 +26,7 @@ function is_numeric(str)
 }
 
 /**
- * Updates the map and the resultcalculation
+ * Updates the map and the result calculation
  * This runs when the form is posted
  * @return void
  */
