@@ -29,16 +29,20 @@
 
 </head>
 <body>
+	<!-- Preloader -->
 	<div id="preloader">
 		<div id="loader"></div>
 	</div>
+	
+	<!-- Welcome screen --> 
     <div id="splash">
         <div class="splash-content">
-         <h1>Vad ska jag swisha?</h1>
-        <a  href="javascript:void(0)" id="close-splash" class="button waves-light waves-effect">
-        Stäng
-        </a>
+         	<h1>Vad ska jag swisha?</h1>
+			<a href="javascript:void(0)" id="close-splash" class="button waves-light waves-effect">
+			Stäng
+			</a>
         </div>
+		<!-- Lottie animation -->
         <div id="container"></div>
     </div>
     
@@ -56,19 +60,18 @@
         </div>
     </section>
     
-    
     <!-- Header for mobile -->
     <section id="mobile-header" role="heading">
         <div class="mobile-header">
             <div id="menuToggle">
                 <input type="checkbox"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                        <ul id="menu">
-                          <a href="http://www.bilsvar.se/sv/Sok-bil"  target="_blank"><li>Vad drar min bil?</li></a>
-                          <a href="https://bensinpriser.nu/"  target="_blank"><li>Vad kostar bensinen i Sverige?</li></a>
-                        </ul>
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="menu">
+					  <a href="http://www.bilsvar.se/sv/Sok-bil"  target="_blank"><li class="first-link waves-effect waves-light">Vad drar min bil?</li></a>
+					  <a href="https://bensinpriser.nu/"  target="_blank"><li class="waves-effect waves-light">Vad kostar bensinen i Sverige?</li></a>
+					</ul>
             </div>
             <p>Vad ska jag swisha?</p>
         </div>
@@ -80,10 +83,10 @@
                 <form method="post" action="./" onsubmit="update_route(); return false;" class="container">
                      <div>
                         <div>
-                            <b>Hur många ska med?</b>
-                              <div>
-                                <input name="num_people" type="text" id="form_num_people" size="16w" class="inputs" placeholder="Antal personer">
-                              </div>
+							 <b>Hur många ska med?</b>
+							  <div>
+								<input name="num_people" type="text" id="form_num_people" size="16w" class="inputs" placeholder="Antal personer">
+							  </div>
                         </div>
                         <div>
                             <b>Var åker ni ifrån?</b>
@@ -109,14 +112,15 @@
                             <input name="price_fuel" placeholder="kr/liter" size="6" class="inputs"  type="text" id="form_price_fuel"/>
                           </div>
                         </div>
-                    
-                    <button type="submit" id="btn-submit" class="button waves-effect waves-light" id="form_submit" value="Vad kostar resan?">
-                        Se resultatet
-                    </button>
+
+						<button type="submit" id="btn-submit" class="button waves-effect waves-light" id="form_submit" value="Vad kostar resan?">
+							Se resultatet
+						</button>
                     </div>
                 </form>
         </div>
-        <div id="form_information">
+        <!-- Prints all the important stuff -->
+		<div id="form_information">
         </div>
     </section>   
     
@@ -126,22 +130,23 @@
             print_map();
         </script>
     </div>
-    
+		
+    <!-- Footer --> 
     <div class="footer" role="footer"> 
         <p>Skapad av Arvid Nilber 2018</p>
     </div>
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113775717-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113775717-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-  gtag('config', 'UA-113775717-1');
-</script>
+	  gtag('config', 'UA-113775717-1');
+	</script>
 
-    
+	<!-- Script that only shows preloader when the site is loading -->
     <script>
         var loader = document.getElementById("preloader");
             window.addEventListener('load', function(){

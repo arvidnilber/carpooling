@@ -1,28 +1,29 @@
 // google.maps.Geocoder
 var g_geocoder;
-// Används för att zooma kartan rätt när markörer lagts till. Typ: google.maps.LatLngBounds
+// This is for to zoom when the right markers have been placed
 var g_bounds;
-// Array med de markörer som för tillfället är på kartan.
+// Array with the marks that are temporarily shown on the map
 var g_markers;
 
-// Aktuella koordinater för till- och frånplats
+// The current coordinates from the place of origin to the destination
 var g_from_location;
 var g_to_location;
 
-// Senast sökta koordinater
+// Last searched coordinates
 var g_last_from;
 var g_last_to;
 
-// True om resultatet ska räknas om
+// True if the results are going to recalculate
 var g_run_calculation = false;
 
 /**
- * Söker efter koordinaterna till given adress.
- * Om flera koordinater matchar adressen körs funktionen handle_multiple_results()
- * @param type "from" (=platsen man åker ifrån) eller "to" (=platsen man ska till)
+ * Searches after the coordinates to the given adress
+ * If multiples coordinates matches the adress the function handle_multiple_results will be run
+ * @param type "from" (=the place you are going from) eller "to" (=the destination)
  * @param address
  * @return void
  */
+
 function geocode(type, address)
 {
 	clear_errors();
@@ -79,11 +80,11 @@ function geocode(type, address)
 }
 
 /**
- * Visa de platser som matchade en given adress.
- * Platserna visas både som markörer på kartan och i en lista i popupruta.
+ * Show the places that matched the given adress
+ * The places both shows up as markers on the map or in a popup
  *
- * @param type "from" eller "to"
- * @param results Array med resultat, given från google.maps.Geocoder.geocode()
+ * @param type "from" or "to"
+ * @param results Array with results, given from google.maps.Geocoder.geocode()
  * @return void
  */
 
@@ -111,61 +112,9 @@ function handle_multiple_results(type, results)
 }
 
 /**
- * Lägger till ett alternativ till listan av möjliga platser,
- * och skapar markör på kartan.
- *
- * @param type "from" eller "to"
- * @param result Det resultat som läggs till
- * @param number Det nummer i ordningen som resultatet skrivs ut i
- * @return void
- */
-function add_result(type, result, number)
-{
-	var address = build_address(result);
-	$('#result_list').append('<li><a href="#" id="multiple_result' + number + '">' + address + '</a></li>');
-	
-	var marker = add_marker(result.geometry.location);
-	
-	$('#multiple_result' + number).click(function()
-		{
-		if (type == 'from')
-		{
-			g_from_location = result.geometry.location;
-			g_last_from = g_from_location;
-			$('#form_location_from').val(address);
-			$('#form_location_to').focus();
-		}
-		else
-		{
-			g_to_location = result.geometry.location;
-			g_last_to = g_to_location;
-			$('#form_location_to').val(address);
-			$('#form_consumption').focus();
-		}
-		clear_markers();
-		$('#multiple_results').hide();
-	});
-	
-	google.maps.event.addListener(marker, 'mouseover', function()
-	{
-		$('#multiple_result' + number).addClass('hover');
-	});
-
-	google.maps.event.addListener(marker, 'mouseout', function()
-	{
-		$('#multiple_result' + number).removeClass('hover');
-	});
-	
-	google.maps.event.addListener(marker, 'click', function()
-	{
-		$('#multiple_result' + number).click();
-		scroll(0, 0);
-	});
-}
-
-/**
  * Bygger upp en detaljerad, läslig adress till en angiven plats
- * @param result Den plats vars adress som ska byggas upp
+ * This makes a detailed, readable adress to the given place
+ * @param result The place whose adress ist to be built 
  * @return void
  */
 
@@ -256,7 +205,7 @@ function build_address(result)
 }
 
 /**
- * Raderar alla markörer från kartan
+ * Deletes all the markers from the map
  * @return void
  */
 function clear_markers()
@@ -271,7 +220,7 @@ function clear_markers()
 
 
 /**
- * Lägger till en markör på angivna koordinater
+ * Adds a marker for the given coordinates
  * @param position
  * @return void
  */

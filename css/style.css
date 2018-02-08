@@ -189,7 +189,7 @@ input:-webkit-autofill {
   color:white;
   padding-left: 0px;
   margin-top: 9px;
-  margin-left:-8px;
+  margin-left:0px;
   background: #263238;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -199,24 +199,21 @@ input:-webkit-autofill {
 }
 
 #menu li {
-    margin-top: 30px;
     color: white;
-    font-size: 22px;
     margin: 0;
     padding: 8px;
     text-decoration: none;
-    font-size: 22px; 
+    font-size: 18px; 
     color: #818181;
     display: block;
     transition: 0.3s;
-    border-radius: 30px;
+    border-radius: px;
     width:80vw;
     font-weight: 300;
     height:50px;
-    line-height: 2.4em;
+    line-height: 2.7em;
     color:white;
-    margin:auto;
-    margin-top:30px;
+    margin:30px auto;
     background-color:#263238;
     -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.3);
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
@@ -229,7 +226,11 @@ input:-webkit-autofill {
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
     box-shadow: 0 5px 40px rgba(0,0,0,.3);
     transition: 0.4s;
-    background-color:#E91E63;
+    background-color:#344249;
+}
+
+.first-link {
+	margin-top: 70px !important;
 }
 
 #menu li:active {
@@ -237,7 +238,7 @@ input:-webkit-autofill {
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
     box-shadow: 0 5px 40px rgba(0,0,0,.3);
     transition: 0.4s;
-    background-color:#E91E63;
+    background-color:#2a353a;
 }
 
 #menu li:focus {
@@ -245,7 +246,7 @@ input:-webkit-autofill {
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
     box-shadow: 0 5px 40px rgba(0,0,0,.3);
     transition: 0.4s;
-    background-color:#E91E63;
+    background-color:#2a353a;
 }
 
 
