@@ -26,8 +26,8 @@ function is_numeric(str)
 }
 
 /**
- * Uppdaterar kartan och resultatberäkningen.
- * Denna körs när formuläret postas.
+ * Updates the map and the result calculation
+ * This runs when the form is posted
  * @return void
  */
 
@@ -66,9 +66,8 @@ function update_route()
 }
 
 /**
- * Visar felmeddelanderuta vid givet inmatningsfält
- * @param type "from" eller "to"
- * @param str Meddelande som ska visas
+ * @param type "from" or "to"
+ * @param str The message that will show up
  * @return void
  */
 
@@ -88,7 +87,7 @@ function show_error(type, str)
 }
 
 /**
- * Döljer felmeddelanden
+ * Hides error messages
  * @return void
  */
 function clear_errors()

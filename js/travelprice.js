@@ -2,26 +2,23 @@ var g_city_from;
 
 var g_city_to;
 
-// Retur från DirectionsService
 var g_directions_result;
 var g_directions_status;
 
 /**
- * Hämtar reseinformation. Skriver ut karta med resväg och information.
- * @param location_from Objekt av typ maps.google.LatLng
- * @param location_to Objekt av typ maps.google.LatLng
- * @param num_people Antal personer
- * @param consumption Fordonets förbrukning per mil
- * @param price_fuel Literpris för bränslet
+ * Collects travelinformation. Writes out a map with a route and information about it
+ * @param num_people Number of persons 
+ * @param consumption The vehicles consumption per mile
+ * @param price_fuel the fuels price per liter
  */
 
 function get_path_and_info(location_from, location_to, num_people, consumption, price_fuel) {
-	// Se efter om gamla koordinaterna inte är samma som de inmatade
+	// Check if the old coordinates are not the same as the already entered ones
 	if (!(g_city_from == location_from && g_city_to == location_to)) {
 		g_city_from = location_from;
 		g_city_to = location_to;
 		
-		// Baserade på http://code.google.com/apis/maps/documentation/javascript/reference.html#DirectionsRequest
+		// Based on https://developers.google.com/maps/documentation/javascript/reference?csw=1#DirectionsRequest
 		var options = {
 			destination : g_city_to,
 			optimizeWaypoints : false,
@@ -49,12 +46,12 @@ function get_path_and_info(location_from, location_to, num_people, consumption, 
 }
 
 /**
- * Beräknar resekostnader med information utifrån det globala objektet.
- * Funktionen förutsätter att det senaste Google Maps-objektet är laddat.
- * @param num_people Antal personer som ska resa
- * @param consumption Bilens bränsleförbrukning per mil
- * @param price_fuel Bränslepriset uttryckt i SEK per mil.
- * @return JSON-objekt med reslängd, tid, total kostnad, kostnad per person.
+ * Calculates travel expenses with information based on the global object.
+ * This function assumes that the latest Google Maps item is loaded.
+ * @param num_people Number of people
+ * @param consumption The vehicles consumption per mile
+ * @param price_fuel Bthe fuels price per liter (currency is SEK)
+ * @return JSON object with travel length, time, total cost, cost per person.
  */
 
 function get_calculated_travelinfo(num_people, consumption, price_fuel)
@@ -90,13 +87,13 @@ function get_calculated_travelinfo(num_people, consumption, price_fuel)
 }
 
 /**
- * Skriver ut karta
+ * Prints out a map
  */
 function print_map()
 {
 	options_map = {
-		// Centrerar på Stockholm, Sverige, som default
-		center : new google.maps.LatLng(60.128161, 18.643501),
+		// Centers on Gothenburg, Sweden as a default
+		center : new google.maps.LatLng(57.70887, 11.974559999999997),
 		mapTypeId : google.maps.MapTypeId.ROADMAP,
 		zoom : 4,
 		scrollwheel: false
@@ -106,7 +103,7 @@ function print_map()
 }
 
 /**
- * Skriver ut resväg på kartan
+ * Prints out a route on the map
  */
 function render_directions()
 {
@@ -119,10 +116,10 @@ function render_directions()
 	renderer.setMap(g_map);
 }
 /**
- * Skriver ut beräknad reseinformation
- * @param num_people Antal personer som ska resa
- * @param consumption Bilens bränsleförbrukning per mil
- * @param price_fuel Bränslepriset uttryckt i SEK per mil.
+ * Prints estimated travel information
+ * @param num_people Number of people
+ * @param consumption The vehicles consumption per mile
+ * @param price_fuel Bthe fuels price per liter (currency is SEK)
  */
 
 function print_travelinfo(num_people, consumption, price_fuel)
