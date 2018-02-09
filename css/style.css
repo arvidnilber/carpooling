@@ -7,9 +7,7 @@ textarea, input, button {
     outline: none; 
 }
 
-
 /*Change color of text in autofill textbox*/
-
 input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
 }
@@ -124,7 +122,7 @@ input:-webkit-autofill {
   position: relative;
   top: 1.3em;
   left: 1em;
-  z-index: 1;
+  z-index: 0;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -249,14 +247,12 @@ input:-webkit-autofill {
     background-color:#2a353a;
 }
 
-
 #menu a {
     text-decoration: none;
     
 }
 
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
