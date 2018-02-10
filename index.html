@@ -75,11 +75,13 @@
 					<span></span>
 					<span></span>
 					<span></span>
+					
 					<ul id="menu">
 					  <a href="http://www.bilsvar.se/sv/Sok-bil"  target="_blank"><li class="first-link waves-effect waves-light">Vad drar min bil?</li></a>
 					  <a href="https://bensinpriser.nu/"  target="_blank"><li class="waves-effect waves-light">Vad kostar bensinen i Sverige?</li></a>
 					</ul>
             </div>
+			<a class="refresh-icon waves-effect waves-light" onclick="window.location.reload()"><i class="material-icons">refresh</i></a>
             <p>Vad ska jag swisha?</p>
         </div>
     </section>
@@ -161,7 +163,7 @@
 		
 		     function closeSplash() {
             document.getElementById("splash").style.opacity = "0";
-				             document.getElementById("splash").style.zIndex = "0";
+			document.getElementById("splash").style.zIndex = "-90";
 
         }
     </script>
