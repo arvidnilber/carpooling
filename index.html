@@ -15,36 +15,38 @@
 
     <!-- Styling --> 
 	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/materalize.css">
-    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/hover.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,400italic|Material+Icons" rel="stylesheet">
     
     <!-- Scripts -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfhCo5DjMhLB9bhq6-TFvRZ8rCBgB5iSA&;language=sv"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-    <script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="./js/gradient.js"></script>
 	<script type="text/javascript" src="./js/geocode.js"></script>
 	<script type="text/javascript" src="./js/travelprice.js"></script>
-    <script type="text/javascript" src="./js/materialize.min.js"></script>
 	<script type="text/javascript" src="./js/default.js"></script>
     <script type="text/javascript" src="./js/waves.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.js" type="text/javascript"></script>
 
 </head>
 <body>
 	<!-- Preloader -->
-	<div id="preloader">
+	<!-- <div id="preloader">
 		<div id="loader"></div>
-	</div>
+	</div> -->
 	
 	<!-- Welcome screen --> 
     <div id="splash">
-        <div class="splash-content">
+		  <div id="gradient"></div>
+
+        <div class="splash-content fade-in">
          	<h1>Vad ska jag swisha?</h1>
-			<a href="javascript:void(0)" id="close-splash" class="button waves-light waves-effect">
-			Stäng
+			<h2>Med den här hemsidan kan du snabbt räkna ut vad resan du och dina kompisar ska åka kostar</h2>
+			<h2>Det enda du behöver veta är vad din bil drar, varifrån du ska åka, var du ska åka och hur många ni är som skall åka!</h2>
+			
+			<p>Kör igång!</p>
+			<a href="javascript:void(0)" onClick="closeSplash()" class="button waves-dark waves-effect">
+				<i class="material-icons">play_arrow</i>
 			</a>
         </div>
 		<!-- Lottie animation -->
@@ -156,6 +158,12 @@
             window.addEventListener('load', function(){
               loader.style.display = 'none';
         })
+		
+		     function closeSplash() {
+            document.getElementById("splash").style.opacity = "0";
+				             document.getElementById("splash").style.zIndex = "0";
+
+        }
     </script>
 </body>
 </html>
