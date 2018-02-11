@@ -16,6 +16,122 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #37474F inset;
 }
 
+#splash {
+  height:100%;
+  width:100%;
+  position: fixed;
+  background-image: url(../img/splash_bg_pc.jpg);
+  color: white;
+  top:0;
+  left:0;
+  opacity: 100;
+  transition: 0.2s;
+  z-index: 109;
+  display: inline;
+}
+
+#gradient {
+ 	position: fixed;
+  	left: 0;
+  	top: 0;
+  	right: 0;
+  	bottom:0;
+  	width: 100%;
+  	height: 100%;
+  	z-index: -1;
+	display: none;
+}
+
+#container {
+    height:300px;
+    width:400px;
+    margin: 0 auto; 
+    margin-top:40px;
+}
+
+.splash-content {
+    text-align: center;
+	width:92vw;
+    margin: 0 auto;
+	margin-top: 60px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.31);
+}
+
+.splash-content a {
+    line-height: 3.4em;
+}
+
+.splash-content h1 {
+    font-weight: 500;
+
+}
+
+.splash-content h2 {
+	font-weight: 200;
+}
+
+.splash-content p {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.splash-content .button {
+	background-color: #27ae60;
+	width: 60px;
+	height: 60px;
+	border-radius: 150px;
+	-webkit-box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.41);
+	-moz-box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.41);
+	box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.41);
+}
+
+.splash-content .button:hover {
+	background-color: #35c673;
+}
+
+.splash-content .button:active {
+	background-color: #35c673;
+}
+
+.splash-content .button:focus {
+	background-color: #35c673;
+}
+
+.splash-content .button i{
+	line-height: 2.5em;
+	text-shadow: none;
+}
+
+
+@media screen and (max-width:600px) {
+	#splash {
+		background-image:none;
+		background-color: #27ae60;
+		background-size: cover;
+	}
+	
+	.splash-content {
+    	width: 85vw;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.21);
+	}
+	
+	#gradient {
+		display: inline;
+	}
+	
+}
+
+@media screen and (max-height:480px) {
+	.splash-content h1 {
+		font-size: 20px;
+	}
+	
+	.splash-content h2 {
+		font-size: 17px;
+	}
+	
+}
+
 .pc-header {
      position: fixed;
     left: 0;
@@ -88,14 +204,7 @@ input:-webkit-autofill {
                         -ms-transition: background-color 0.2s ease-in-out;
                         transition: background-color 0.2s ease-in-out;
 					}
-                        #navbar .active {
-                            border-bottom: 2px solid #FF7777;                  
-                        }  
-                        
-                        #navbar .nonactive {
-	                         padding-bottom: 2px;
-                        } 
-    
+                      
 
 .mobile-header {
     display: none;
@@ -124,8 +233,6 @@ input:-webkit-autofill {
 	width: 30px;
 	border-radius: 50px;
 }
-
-
 
 #menuToggle {
   display: block;
@@ -280,6 +387,14 @@ input:-webkit-autofill {
         margin: 0;
         top:-0.8px;
     }
+	
+}
+
+@media screen and (max-height:480px) {
+	#menu li {
+		height:40px;
+		font-size: 15px;
+	}
 }
 
 #main {
@@ -620,115 +735,7 @@ input:-webkit-autofill {
   }
 }
 
-#splash {
-  height:100%;
-  width:100%;
-  position: fixed;
-  background-image: url(../img/splash_bg_pc.jpg);
-  color: white;
-  top:0;
-  left:0;
-  opacity: 100;
-  transition: 0.2s;
-  z-index: 109;
-  display: inline;
-}
 
-#gradient {
- 	position: fixed;
-  	left: 0;
-  	top: 0;
-  	right: 0;
-  	bottom:0;
-  	width: 100%;
-  	height: 100%;
-  	z-index: -1;
-	display: none;
-}
-
-#container {
-    height:300px;
-    width:400px;
-    margin: 0 auto; 
-    margin-top:40px;
-}
-
-.splash-content {
-    text-align: center;
-	width:92vw;
-    margin: 0 auto;
-	margin-top: 60px;
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.31);
-}
-
-.splash-content a {
-    line-height: 3.4em;
-}
-
-.splash-content h1 {
-    font-weight: 500;
-
-}
-
-.splash-content h2 {
-	font-weight: 200;
-}
-
-.splash-content p {
-	font-size: 22px;
-	font-weight: 500;
-}
-
-.splash-content .button {
-	background-color: #27ae60;
-	width: 60px;
-	height: 60px;
-	border-radius: 150px;
-	-webkit-box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.41);
-	-moz-box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.41);
-	box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.41);
-}
-
-.splash-content .button i{
-	line-height: 2.5em;
-}
-
-
-@media screen and (max-width:600px) {
-	#splash {
-		background-image:none;
-		background-color: #27ae60;
-		background-size: cover;
-	}
-	
-	.splash-content {
-    	width: 85vw;
-		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.21);
-	}
-	
-	#gradient {
-		display: inline;
-	}
-	
-}
-
-@media screen and (max-height:480px) {
-	.splash-content h1 {
-		font-size: 20px;
-	}
-	
-	.splash-content h2 {
-		font-size: 17px;
-	}
-	
-	#menu li {
-		height:40px;
-		font-size: 15px;
-	}
-	
-	
-	
-}
 
 .footer {
     position: absolute;
