@@ -27,9 +27,11 @@ input:-webkit-autofill {
   opacity: 100;
   transition: 0.2s;
   z-index: 109;
-  display: inline;
 }
 
+.splash {
+	display: none;
+}
 #gradient {
  	position: fixed;
   	left: 0;

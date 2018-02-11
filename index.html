@@ -25,18 +25,13 @@
 	<script type="text/javascript" src="./js/gradient.js"></script>
 	<script type="text/javascript" src="./js/geocode.js"></script>
 	<script type="text/javascript" src="./js/travelprice.js"></script>
+	
 	<script type="text/javascript" src="./js/default.js"></script>
     <script type="text/javascript" src="./js/waves.js"></script>
-
 </head>
-<body>
-	<!-- Preloader -->
-	<!-- <div id="preloader">
-		<div id="loader"></div>
-	</div> -->
-	
+<body>	
 	<!-- Welcome screen --> 
-    <div id="splash">
+    <div class="splash" id="splash">
 		  <div id="gradient"></div>
 
         <div class="splash-content fade-in">
@@ -45,7 +40,7 @@
 			<h2>Det enda du behöver veta är vad din bil drar, varifrån du ska åka, var du ska åka och hur många ni är som skall åka!</h2>
 			
 			<p>Kör igång!</p>
-			<a href="javascript:void(0)" onClick="closeSplash()" class="button waves-dark waves-effect">
+			<a href="javascript:void(0)" id="close" onClick="closeSplash()" class="button waves-dark waves-effect">
 				<i class="material-icons">play_arrow</i>
 			</a>
         </div>
@@ -154,18 +149,8 @@
 	  gtag('config', 'UA-113775717-1');
 	</script>
 
-	<!-- Script that only shows preloader when the site is loading -->
-    <script>
-        var loader = document.getElementById("preloader");
-            window.addEventListener('load', function(){
-              loader.style.display = 'none';
-        })
-		
-		     function closeSplash() {
-            document.getElementById("splash").style.opacity = "0";
-			document.getElementById("splash").style.zIndex = "-90";
-
-        }
-    </script>
+	<!-- To hide the welcome message after seeing it once --> 
+	<script type="text/javascript" src="./js/jquery.cookie.js"></script>
+	
 </body>
 </html>
