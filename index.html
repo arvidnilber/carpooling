@@ -16,6 +16,8 @@
     <!-- Styling --> 
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/animations.css">
+
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,400italic|Material+Icons" rel="stylesheet">
     
@@ -25,7 +27,6 @@
 	<script type="text/javascript" src="./js/gradient.js"></script>
 	<script type="text/javascript" src="./js/geocode.js"></script>
 	<script type="text/javascript" src="./js/travelprice.js"></script>
-	
 	<script type="text/javascript" src="./js/default.js"></script>
     <script type="text/javascript" src="./js/waves.js"></script>
 </head>
@@ -34,13 +35,13 @@
     <div class="splash" id="splash">
 		  <div id="gradient"></div>
 
-        <div class="splash-content fade-in">
-         	<h1>Vad ska jag swisha?</h1>
-			<h2>Med den här hemsidan kan du snabbt räkna ut vad resan du och dina kompisar ska åka kostar</h2>
-			<h2>Det enda du behöver veta är vad din bil drar, varifrån du ska åka, var du ska åka och hur många ni är som skall åka!</h2>
+        <div class="splash-content">
+         	<h1 class="slide-in-top">Vad ska jag swisha?</h1>
+			<h2 class="fade-in-right">Med den här hemsidan kan du snabbt räkna ut vad resan du och dina kompisar ska åka kostar</h2>
+			<h2 class="fade-in-left">Det enda du behöver veta är vad din bil drar, varifrån du ska åka, var du ska åka och hur många ni är som skall åka!</h2>
 			
-			<p>Kör igång!</p>
-			<a href="javascript:void(0)" id="close" onClick="closeSplash()" class="button waves-dark waves-effect">
+			<p class="fade-in-bottom">Kör igång!</p>
+			<a href="javascript:void(0)" id="close" onClick="closeSplash()" class="button waves-dark waves-effect fade-in-bottom">
 				<i class="material-icons">play_arrow</i>
 			</a>
         </div>
@@ -140,14 +141,13 @@
     </div>
 
     <!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113775717-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-113775717-1');
-	</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113775717-1"></script>
+		<script>
+		   window.dataLayer = window.dataLayer || [];
+		   function gtag(){dataLayer.push(arguments);}
+		   gtag('js', new Date());
+		   gtag('config', 'UA-113775717-1');
+		</script>
 
 	<!-- To hide the welcome message after seeing it once --> 
 	<script type="text/javascript" src="./js/jquery.cookie.js"></script>

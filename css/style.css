@@ -32,6 +32,7 @@ input:-webkit-autofill {
 .splash {
 	display: none;
 }
+
 #gradient {
  	position: fixed;
   	left: 0;
