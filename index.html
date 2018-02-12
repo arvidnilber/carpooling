@@ -28,6 +28,7 @@
 	<script type="text/javascript" src="./js/geocode.js"></script>
 	<script type="text/javascript" src="./js/travelprice.js"></script>
 	<script type="text/javascript" src="./js/default.js"></script>
+	<script type="text/javascript" src="./js/blur.js"></script>
     <script type="text/javascript" src="./js/waves.js"></script>
 </head>
 <body>	
@@ -48,7 +49,23 @@
 		<!-- Lottie animation -->
         <div id="container"></div>
     </div>
-    
+	
+	<div id="swish">
+		<div class="swish-content">
+			<h3>Stöd denna sida!</h3>
+			<p>För att denna sida ska kunna fortsätta att vara gratis behöver man pengar</p>
+			<p>Så om du känner att du har lite för mycket pengar i fickan så swisha gärna oss!</p>
+			<h3>Swisha till oss via numret:</h3>
+			<h3>0720529907</h3>
+
+			<a href="#footer" class="close-button button waves-effect waves-light"><i class="material-icons">close</i></a>
+		</div>
+
+	</div>
+	
+	<div id="blur-overlay" class="cover blur-in">
+
+  
     <!-- Header for desktop -->
     <section id="pc-header" role="heading">
         <div class="pc-header">
@@ -82,6 +99,8 @@
         </div>
     </section>
     
+	
+	
     <!-- The stuff you are here for -->
     <section id="main" class="animated fadeIn">
         <div id="form_container" class="container">
@@ -136,10 +155,10 @@
     </div>
 		
     <!-- Footer --> 
-    <div class="footer" role="footer"> 
-        <p>Skapad av Arvid Nilber 2018</p>
+    <div class="footer" role="footer" id="footer"> 
+        <p>Skapad av Arvid Nilber 2018 </p> <span></span> <a href="#footer" class="open-button">Donera gärna via Swish</a>
     </div>
-
+	</div>
     <!-- Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113775717-1"></script>
 		<script>
@@ -148,7 +167,8 @@
 		   gtag('js', new Date());
 		   gtag('config', 'UA-113775717-1');
 		</script>
-
+	
+	
 	<!-- To hide the welcome message after seeing it once --> 
 	<script type="text/javascript" src="./js/jquery.cookie.js"></script>
 	

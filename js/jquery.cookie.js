@@ -18,7 +18,7 @@ if(!$.cookie('overlay')){
 
 $('#close').click(function(){
    $('.splash').hide();
-    $.cookie('overlay', { expires: 14, path: '/'});
+    $.cookie('overlay', { expires: 7, path: '/'});
    return false;
 });
 
