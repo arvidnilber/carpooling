@@ -24,7 +24,6 @@ input:-webkit-autofill {
   color: white;
   top:0;
   left:0;
-  opacity: 100;
   transition: 0.2s;
   z-index: 109;
 }
@@ -66,7 +65,6 @@ input:-webkit-autofill {
 
 .splash-content h1 {
     font-weight: 500;
-
 }
 
 .splash-content h2 {
@@ -105,7 +103,6 @@ input:-webkit-autofill {
 	text-shadow: none;
 }
 
-
 @media screen and (max-width:600px) {
 	#splash {
 		background-image:none;
@@ -121,7 +118,6 @@ input:-webkit-autofill {
 	#gradient {
 		display: inline;
 	}
-	
 }
 
 @media screen and (max-height:480px) {
@@ -132,7 +128,6 @@ input:-webkit-autofill {
 	.splash-content h2 {
 		font-size: 17px;
 	}
-	
 }
 
 .pc-header {
@@ -156,8 +151,7 @@ input:-webkit-autofill {
     grid-template-rows: 1fr;
 }
 
-
- .pc-header p {
+.pc-header p {
     position: absolute;
     top: 0;
     font-size:1em;
@@ -169,9 +163,9 @@ input:-webkit-autofill {
     -ms-transition:  0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
-.pc-header pxx:hover {
-    color:#3498db;
-   -moz-transition: 0.2s ease-in-out;
+.pc-header p:hover {
+    color:#e74c3c;
+    -moz-transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
     -ms-transition:  0.2s ease-in-out;
     transition: 0.2s ease-in-out;
@@ -226,7 +220,6 @@ input:-webkit-autofill {
     font-weight: 200;
     transition: 0.4s;
     text-align: center;
-
 }
 
 .mobile-header .refresh-icon {
@@ -369,7 +362,6 @@ input:-webkit-autofill {
 
 #menu a {
     text-decoration: none;
-    
 }
 
 #menuToggle input:checked ~ ul {
@@ -437,27 +429,6 @@ input:-webkit-autofill {
     }
 }
 
-.inputs {
-    box-sizing: border-box;
-    border:0px;
-    outline: none;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: 300;
-    border-bottom:1px solid white;
-    transition: 0.5s;
-    text-align: center;
-    margin-bottom: 10px;
-    height:40px;
-    border-radius: 1px;
-    color: white;
-}
-
-.inputs:focus {
-    border-bottom: 1px solid #2ecc71;
-    transition: 0.5s;
-}
-
 .input {
     box-sizing: border-box;
     outline: none;
@@ -483,11 +454,6 @@ input:-webkit-autofill {
     color:#bdc3c7;
 }
 
-
-.inputs::placeholder {
-    color:#bdc3c7;
-}
-
 #form_location_from {
     width:150px;
 }
@@ -499,6 +465,7 @@ input:-webkit-autofill {
 #message_text {
 	margin-right: 20px;
 }
+
 #map_canvas {
 	width: 70vw;
 	height: 565px;
@@ -516,15 +483,9 @@ input:-webkit-autofill {
         width:85vw;
         margin: 0 auto;
         margin-bottom:20px;
-
     }
     
     .input {
-        border-bottom: 1px solid white;
-                border-radius: 1px;
-
-    }
-    .inputs {
         border-bottom: 1px solid white;
         border-radius: 1px;
     }
@@ -551,8 +512,7 @@ input:-webkit-autofill {
 .button:active {
     transition: all ease .5s;
     background-color: #137fdd;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .button:focus {   
@@ -568,7 +528,7 @@ input:-webkit-autofill {
 .button:hover {
     background-color: #3097f2;
     transition: all ease .5s;
-	  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 }
 
@@ -585,154 +545,16 @@ input:-webkit-autofill {
 	padding-top: 0px;
 }
 
-
 @media screen and (max-width:600px) {
     .button {
         width: 40vw;
-         	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     
     #form_information {
         width: 80vw;
     }
 }
-
-
-.spinner{
-    width: 80px;
-    height: 80px;
-    border: 2px solid #f3f3f3;
-    border-top:3px solid #f25a41;
-    border-radius: 100%;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
-    margin: auto;
-    animation: spin 1s infinite linear;
-}
-
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg);
-    }
-}
-
-#preloader {
-  height:100%;
-  width:100%;
-  background:#37474F;
-  position:fixed;
-  left:0;
-  top:0;
-  z-index: 99;
-  transition: 0.4s;
- }
-
-#loader {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #9370DB;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-#loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #BA55D3;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-}
-#loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #FF00FF;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-
-.fade-in {
-	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
-	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
-}
-/* ----------------------------------------------
- * Generated by Animista on 2018-2-10 20:1:38
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation fade-in
- * ----------------------------------------
- */
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
 
 .footer {
     position: absolute;
@@ -803,7 +625,7 @@ input:-webkit-autofill {
 	#swish {
 		width: 85%;
 		left: 45%;
-		height:330px;
+		height:340px;
 		margin-top:20%;
 		margin-left: -37.5%;
 	}
@@ -828,17 +650,16 @@ input:-webkit-autofill {
 		line-height: 2.9em;
 		font-size: 17px;
 	}
-	.swish-content {
-	margin-top:0px;
-}
 	
+	.swish-content {
+		margin-top:0px;
+	}
 }
 
 @media screen and (max-height:640px) {
 	#swish {
 		height:370px;
 		margin-top:0%;
-
 	}
 }
 
@@ -1008,15 +829,16 @@ input:-webkit-autofill {
  * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
+
 .waves-effect {
   position: relative;
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
   vertical-align: middle;
   z-index: 1;
@@ -1037,7 +859,7 @@ input:-webkit-autofill {
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   pointer-events: none;
 }
 
@@ -1131,6 +953,7 @@ input:-webkit-autofill {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
+
 .waves-float:active {
   -webkit-box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.3);

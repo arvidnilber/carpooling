@@ -17,10 +17,8 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
 	<link rel="stylesheet" href="css/animations.css">
-
-
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,400italic|Material+Icons" rel="stylesheet">
-    
+
     <!-- Scripts -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfhCo5DjMhLB9bhq6-TFvRZ8rCBgB5iSA&;language=sv"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
@@ -39,7 +37,6 @@
 				<h1 class="slide-in-top">Vad ska jag swisha?</h1>
 				<h2 class="fade-in-right">Med den här hemsidan kan du snabbt räkna ut vad resan kommer att kostar</h2>
 				<h2 class="fade-in-left">Det enda du behöver veta är vad din bil drar, varifrån du ska åka, var du ska åka och hur många ni är som skall åka!</h2>
-
 				<p class="fade-in-bottom">Kör igång!</p>
 				<a href="javascript:void(0)" id="close" onClick="closeSplash()" class="button waves-dark waves-effect fade-in-bottom">
 					<i class="material-icons">play_arrow</i>
@@ -54,106 +51,104 @@
 			<p>Så om du känner att du har lite för mycket pengar i fickan så swisha gärna oss!</p>
 			<h3>Swisha till oss via numret:</h3>
 			<h3>0720529907</h3>
-
 			<a href="#footer" class="close-button button waves-effect waves-light"><i class="material-icons">close</i></a>
 		</div>
-
 	</div>
 	
+	<!-- Blurs the background -->
 	<div id="blur-overlay" class="blur-in">
-		
-    <!-- Header for desktop -->
-    <section id="pc-header" role="heading">
-        <div class="pc-header">
-            <p class="header-logo">Vad ska jag swisha?</p>
-            <nav>
-                <ul>
-                  <li><a href="http://www.bilsvar.se/sv/Sok-bil/" class="waves-effect waves-light hvr-underline-from-center" target="_blank">Vad drar min bil?</a></li>
-                  <li><a href="https://bensinpriser.nu/" class="waves-effect waves-light hvr-underline-from-center" target="_blank">Vad kostar bensinen i Sverige?</a></li>
-                </ul>
-            </nav>
-           
-        </div>
-    </section>
-    
-    <!-- Header for mobile -->
-    <section id="mobile-header" role="heading">
-        <div class="mobile-header">
-            <div id="menuToggle">
-                <input type="checkbox"/>
-					<span></span>
-					<span></span>
-					<span></span>
-					
-					<ul id="menu">
-					  <a href="http://www.bilsvar.se/sv/Sok-bil"  target="_blank"><li class="first-link waves-effect waves-light">Vad drar min bil?</li></a>
-					  <a href="https://bensinpriser.nu/"  target="_blank"><li class="waves-effect waves-light">Vad kostar bensinen i Sverige?</li></a>
+		<!-- Header for desktop -->
+		<section id="pc-header" role="heading">
+			<div class="pc-header">
+				<p class="header-logo">Vad ska jag swisha?</p>
+				<nav>
+					<ul>
+					  <li><a href="http://www.bilsvar.se/sv/Sok-bil/" class="waves-effect waves-light hvr-underline-from-center" target="_blank">Vad drar min bil?</a></li>
+					  <li><a href="https://bensinpriser.nu/" class="waves-effect waves-light hvr-underline-from-center" target="_blank">Vad kostar bensinen i Sverige?</a></li>
 					</ul>
-            </div>
-			<a class="refresh-icon waves-effect waves-light" onclick="window.location.reload()"><i class="material-icons">refresh</i></a>
-            <p>Vad ska jag swisha?</p>
-        </div>
-    </section>
-    
-    <!-- The stuff you are here for -->
-    <section id="main" class="animated fadeIn">
-        <div id="form_container" class="container">
-                <form method="post" action="./" onsubmit="update_route(); return false;" class="container">
-                     <div>
-                        <div>
-							 <b>Hur många ska med?</b>
-							  <div>
-								<input name="num_people" type="text" id="form_num_people" size="16w" class="inputs" placeholder="Antal personer">
-							  </div>
-                        </div>
-                        <div>
-                            <b>Var åker ni ifrån?</b>
-                            <div>
-                            <input name="location_from" placeholder="Ort" class="input" type="text" id="form_location_from" onblur="geocode('from', this.value);"/>
-                          </div>
-                        </div>
-                        <div>
-                            <b>Var ska ni någonstans?</b>
-                            <div>
-                            <input name="location_to" placeholder="Ort" class="input"  type="text" id="form_location_to" onblur="geocode('to', this.value);"/>
-                          </div>
-                        </div>
-                        <div>
-                            <b>Vad drar eran bil? (blandad körning)</b>
-                            <div>
-                            <input name="consumption"  size="6" class="inputs" placeholder="liter/mil" type="text" id="form_consumption"/>
-                          </div>
-                        </div>
-                        <div>
-                            <b>Vad kommer bränslet att kosta?</b>
-                            <div>
-                            <input name="price_fuel" placeholder="kr/liter" size="6" class="inputs"  type="text" id="form_price_fuel"/>
-                          </div>
-                        </div>
-						<button type="submit" id="btn-submit" class="button waves-effect waves-light" id="form_submit" value="Vad kostar resan?">
-							Se resultatet
-						</button>
-                    </div>
-                </form>
-        </div>
+				</nav>
 
-        <!-- Prints all the important stuff -->
-		<div id="form_information">
-        </div>
-    </section>   
-  
-    <!-- Map --> 
-    <div id="map_canvas">
-        <script type="text/javascript">
-            print_map();
-        </script>
-    </div>
-		
-    <!-- Footer --> 
-    <div class="footer" role="footer" id="footer"> 
-        <p>Skapad av Arvid Nilber 2018 </p> <span></span> <a href="#footer" class="open-button">Donera gärna via Swish</a>
-    </div>
+			</div>
+		</section>
+
+		<!-- Header for mobile -->
+		<section id="mobile-header" role="heading">
+			<div class="mobile-header">
+				<div id="menuToggle">
+					<input type="checkbox"/>
+						<span></span>
+						<span></span>
+						<span></span>
+
+						<ul id="menu">
+						  <a href="http://www.bilsvar.se/sv/Sok-bil"  target="_blank"><li class="first-link waves-effect waves-light">Vad drar min bil?</li></a>
+						  <a href="https://bensinpriser.nu/"  target="_blank"><li class="waves-effect waves-light">Vad kostar bensinen i Sverige?</li></a>
+						</ul>
+				</div>
+				<a class="refresh-icon waves-effect waves-light" onclick="window.location.reload()"><i class="material-icons">refresh</i></a>
+				<p>Vad ska jag swisha?</p>
+			</div>
+		</section>
+
+		<!-- The stuff you are here for -->
+		<section id="main" class="animated fadeIn">
+			<div id="form_container" class="container">
+					<form method="post" action="./" onsubmit="update_route(); return false;" class="container">
+						 <div>
+							<div>
+								 <b>Hur många ska med?</b>
+								  <div>
+									<input name="num_people" type="text" id="form_num_people" size="16w" class="input" placeholder="Antal personer">
+								  </div>
+							</div>
+							<div>
+								<b>Var åker ni ifrån?</b>
+								<div>
+								<input name="location_from" placeholder="Ort" class="input" type="text" id="form_location_from" onblur="geocode('from', this.value);"/>
+							  </div>
+							</div>
+							<div>
+								<b>Var ska ni någonstans?</b>
+								<div>
+								<input name="location_to" placeholder="Ort" class="input"  type="text" id="form_location_to" onblur="geocode('to', this.value);"/>
+							  </div>
+							</div>
+							<div>
+								<b>Vad drar eran bil? (blandad körning)</b>
+								<div>
+								<input name="consumption"  size="6" class="input" placeholder="liter/mil" type="text" id="form_consumption"/>
+							  </div>
+							</div>
+							<div>
+								<b>Vad kommer bränslet att kosta?</b>
+								<div>
+								<input name="price_fuel" placeholder="kr/liter" size="6" class="input"  type="text" id="form_price_fuel"/>
+							  </div>
+							</div>
+							<button type="submit" id="btn-submit" class="button waves-effect waves-light" id="form_submit" value="Vad kostar resan?">
+								Se resultatet
+							</button>
+						</div>
+					</form>
+			</div>
+
+			<!-- Prints all the important stuff -->
+			<div id="form_information"></div>
+		</section>   
+
+		<!-- Map --> 
+		<div id="map_canvas">
+			<script type="text/javascript">
+				print_map();
+			</script>
+		</div>
+
+		<!-- Footer --> 
+		<div class="footer" role="footer" id="footer"> 
+			<p>Skapad av Arvid Nilber 2018 </p> <span></span> <a href="#footer" class="open-button">Donera gärna via Swish</a>
+		</div>
 	</div>
+	
     <!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113775717-1"></script>
 	<script>
