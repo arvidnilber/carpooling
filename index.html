@@ -34,20 +34,17 @@
 <body>	
 	<!-- Welcome screen --> 
     <div class="splash" id="splash">
-		  <div id="gradient"></div>
+		<div id="gradient"></div>
+			<div class="splash-content">
+				<h1 class="slide-in-top">Vad ska jag swisha?</h1>
+				<h2 class="fade-in-right">Med den här hemsidan kan du snabbt räkna ut vad resan kommer att kostar</h2>
+				<h2 class="fade-in-left">Det enda du behöver veta är vad din bil drar, varifrån du ska åka, var du ska åka och hur många ni är som skall åka!</h2>
 
-        <div class="splash-content">
-         	<h1 class="slide-in-top">Vad ska jag swisha?</h1>
-			<h2 class="fade-in-right">Med den här hemsidan kan du snabbt räkna ut vad resan du och dina kompisar ska åka kostar</h2>
-			<h2 class="fade-in-left">Det enda du behöver veta är vad din bil drar, varifrån du ska åka, var du ska åka och hur många ni är som skall åka!</h2>
-			
-			<p class="fade-in-bottom">Kör igång!</p>
-			<a href="javascript:void(0)" id="close" onClick="closeSplash()" class="button waves-dark waves-effect fade-in-bottom">
-				<i class="material-icons">play_arrow</i>
-			</a>
-        </div>
-		<!-- Lottie animation -->
-        <div id="container"></div>
+				<p class="fade-in-bottom">Kör igång!</p>
+				<a href="javascript:void(0)" id="close" onClick="closeSplash()" class="button waves-dark waves-effect fade-in-bottom">
+					<i class="material-icons">play_arrow</i>
+				</a>
+		</div>
     </div>
 	
 	<div id="swish">
@@ -63,9 +60,8 @@
 
 	</div>
 	
-	<div id="blur-overlay" class="cover blur-in">
-
-  
+	<div id="blur-overlay" class="blur-in">
+		
     <!-- Header for desktop -->
     <section id="pc-header" role="heading">
         <div class="pc-header">
@@ -99,8 +95,6 @@
         </div>
     </section>
     
-	
-	
     <!-- The stuff you are here for -->
     <section id="main" class="animated fadeIn">
         <div id="form_container" class="container">
@@ -160,15 +154,14 @@
     </div>
 	</div>
     <!-- Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113775717-1"></script>
-		<script>
-		   window.dataLayer = window.dataLayer || [];
-		   function gtag(){dataLayer.push(arguments);}
-		   gtag('js', new Date());
-		   gtag('config', 'UA-113775717-1');
-		</script>
-	
-	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113775717-1"></script>
+	<script>
+	   window.dataLayer = window.dataLayer || [];
+	   function gtag(){dataLayer.push(arguments);}
+	   gtag('js', new Date());
+	   gtag('config', 'UA-113775717-1');
+	</script>
+
 	<!-- To hide the welcome message after seeing it once --> 
 	<script type="text/javascript" src="./js/jquery.cookie.js"></script>
 	
