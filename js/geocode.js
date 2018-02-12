@@ -18,8 +18,9 @@ var g_run_calculation = false;
 
 /**
  * Searches after the coordinates to the given adress
- * If multiples coordinates matches the adress the function handle_multiple_results will be run
- * @param type "from" (=the place you are going from) eller "to" (=the destination)
+ * If multiples coordinates matches the adress the function handle_multiple_results will run
+ * @param type "from" (=the place you are going from) or "to" 
+ (=the destination)
  * @param address
  * @return void
  */
@@ -112,9 +113,9 @@ function handle_multiple_results(type, results)
 }
 
 /**
- * Bygger upp en detaljerad, läslig adress till en angiven plats
+ * Builds a detailed, legible address to a specified location
  * This makes a detailed, readable adress to the given place
- * @param result The place whose adress ist to be built 
+ * @param result The place whose adress is to be built 
  * @return void
  */
 

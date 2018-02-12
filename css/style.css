@@ -483,11 +483,6 @@ input:-webkit-autofill {
     color:#bdc3c7;
 }
 
-#message {
-	border-color: #f00;
-	color: #d00;
-	width: 500px;
-}
 
 .inputs::placeholder {
     color:#bdc3c7;
@@ -501,6 +496,9 @@ input:-webkit-autofill {
     width:150px;
 }
 
+#message_text {
+	margin-right: 20px;
+}
 #map_canvas {
 	width: 70vw;
 	height: 565px;
@@ -561,14 +559,10 @@ input:-webkit-autofill {
     transition: all ease .5s;
     border:0;
     background-color: #137fdd;
-<<<<<<< HEAD:htdocs/css/style.css
     -webkit-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
     -moz-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
     box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
-=======
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
->>>>>>> 3f2a3cccbc65132fdadad0cb4c4559b9d3186833:css/style.css
+ 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .button:hover {
@@ -751,7 +745,7 @@ input:-webkit-autofill {
 	padding:1em;
 }
 
-.footer P {
+.footer p {
 	display: inline-block;
 }
 
@@ -840,9 +834,11 @@ input:-webkit-autofill {
 	
 }
 
-@media screen and (max-height:480px) {
+@media screen and (max-height:640px) {
 	#swish {
 		height:370px;
+		margin-top:0%;
+
 	}
 }
 
