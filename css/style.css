@@ -393,7 +393,7 @@ input:-webkit-autofill {
 }
 
 #main {
-    margin-top:100px;
+    margin-top:90px;
 }
 
 .container {
@@ -467,7 +467,7 @@ input:-webkit-autofill {
 }
 
 #map_canvas {
-	width: 70vw;
+	width: 75vw;
 	height: 565px;
     border-radius: 5px;
     margin: 0 auto;
