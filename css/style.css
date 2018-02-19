@@ -578,13 +578,13 @@ input:-webkit-autofill {
 }
 
 .footer span {
-  display: inline-block;
-  width: 1px;
-  height:18px;
-  margin-left: 5px;
-  margin-bottom: -4px;
-  background:rgba(255,255,255,0.5);
-  z-index: 1;
+	display: inline-block;
+	width: 1px;
+	height:18px;
+	margin-left: 5px;
+	margin-bottom: -4px;
+	background:rgba(255,255,255,0.5);
+	z-index: 1;
 }
 
 #swish {
