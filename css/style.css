@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto';
     background-color: #37474F;
 }
 
@@ -301,7 +301,7 @@ input:-webkit-autofill {
   left:0;
   color:white;
   padding-left: 0px;
-  margin-top: 9px;
+  margin-top:9px;
   margin-left:0px;
   background: #263238;
   list-style-type: none;
@@ -316,17 +316,17 @@ input:-webkit-autofill {
     margin: 0;
     padding: 8px;
     text-decoration: none;
-    font-size: 18px; 
+    font-size: 17px; 
     color: #818181;
-    display: block;
+    displ9y: block;
     transition: 0.3s;
     border-radius: 30px;
     width:80vw;
     font-weight: 300;
     height:50px;
-    line-height: 2.7em;
+    line-height: 3em;
     color:white;
-    margin:30px auto;
+    margin:15px auto;
     background-color:#263238;
     -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.3);
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
@@ -343,7 +343,7 @@ input:-webkit-autofill {
 }
 
 .first-link {
-	margin-top: 70px !important;
+	margin-top: 50px !important;
 }
 
 #menu li:active {
@@ -405,7 +405,7 @@ input:-webkit-autofill {
 }
 
 .container b {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #form_information {
@@ -428,6 +428,11 @@ input:-webkit-autofill {
     #form_information {
         font-weight: 200;
     }
+	
+	.container b {
+    font-weight: 500;
+	}
+
 }
 
 .input {
@@ -507,7 +512,8 @@ input:-webkit-autofill {
   	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
+	font-family: 'Roboto';	
 }
 
 .button:active {
