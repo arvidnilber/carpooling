@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     background-color: #37474F;
 }
 
@@ -115,6 +113,7 @@ input:-webkit-autofill {
 	.splash-content {
     	width: 85vw;
 		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.21);
+		font-family: 'Product Sans', sans-serif;
 	}
 	
 	#gradient {
@@ -219,9 +218,10 @@ input:-webkit-autofill {
     height: 3.5em;
     line-height: 1.2em;
     color: white;
-    font-weight: 200;
+    font-weight: 500;
     transition: 0.4s;
     text-align: center;
+	font-family: 'Product Sans', sans-serif;
 }
 
 .mobile-header .refresh-icon {
@@ -326,6 +326,7 @@ input:-webkit-autofill {
     height:50px;
     line-height: 3em;
     color:white;
+	font-family: 'Product Sans';
     margin:15px auto;
     background-color:#263238;
     -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.3);
@@ -419,6 +420,8 @@ input:-webkit-autofill {
 @media screen and (max-width:600px) {
     #main {
         margin-top: 80px;
+		font-size: 18px;
+		font-family: 'Product Sans', sans-serif;
     }
     
     .container {
@@ -432,7 +435,6 @@ input:-webkit-autofill {
 	.container b {
     font-weight: 500;
 	}
-
 }
 
 .input {
@@ -494,6 +496,8 @@ input:-webkit-autofill {
     .input {
         border-bottom: 1px solid white;
         border-radius: 1px;
+		font-family: 'Product Sans', sans-serif;
+		font-size:17px;
     }
 }
 
@@ -513,7 +517,6 @@ input:-webkit-autofill {
     color: white;
     font-size: 14px;
     font-weight: 400;
-	font-family: 'Roboto';	
 }
 
 .button:active {
@@ -555,6 +558,10 @@ input:-webkit-autofill {
     .button {
         width: 40vw;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		font-family: 'Product Sans', sans-serif;
+		letter-spacing: 0.3px;
+		font-size: 16px;
+		line-height: 1em;
     }
     
     #form_information {
@@ -629,6 +636,10 @@ input:-webkit-autofill {
 }
 
 @media screen and (max-width:1200px){
+	#footer {
+		font-family: 'Product Sans', sans-serif;
+	}
+	
 	#swish {
 		width: 85%;
 		left: 45%;
