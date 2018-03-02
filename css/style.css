@@ -324,10 +324,10 @@ input:-webkit-autofill {
     width:80vw;
     font-weight: 300;
     height:50px;
-    line-height:2.9em;
+    line-height:3em;
     color:white;
 	font-family: 'Product Sans';
-    margin:15px auto;
+    margin:20px auto;
     background-color:#263238;
     -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.3);
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
@@ -344,7 +344,7 @@ input:-webkit-autofill {
 }
 
 .first-link {
-	margin-top: 50px !important;
+	margin-top: 40px !important;
 }
 
 #menu li:active {
@@ -395,7 +395,7 @@ input:-webkit-autofill {
 }
 
 #main {
-    margin-top:90px;
+    margin-top:75px;
 }
 
 .container {
@@ -419,7 +419,6 @@ input:-webkit-autofill {
 
 @media screen and (max-width:600px) {
     #main {
-        margin-top: 80px;
 		font-size: 18px;
 		font-family: 'Product Sans', sans-serif;
     }
@@ -470,6 +469,10 @@ input:-webkit-autofill {
     width:175px;
 }
 
+#form_num_people {
+	width:140px;
+}
+
 #message_text {
 	margin-right: 20px;
 }
@@ -487,7 +490,7 @@ input:-webkit-autofill {
 
 @media screen and (max-width:600px) {
     #map_canvas {
-        height:400px;
+        height:300px;
         width:85vw;
         margin: 0 auto;
         margin-bottom:20px;
@@ -565,7 +568,7 @@ input:-webkit-autofill {
     }
     
     #form_information {
-        width: 80vw;
+        width: 85vw;
     }
 }
 
