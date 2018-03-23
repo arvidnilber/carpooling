@@ -525,22 +525,9 @@ input:-webkit-autofill {
 	background-color: #3498db;
 	transition: all ease  .5s;
 }
-.button:active {
-    transition: all ease .5s;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
 
-.button:focus {   
-    transition: all ease .5s;
-    border:0;
-    -webkit-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
-    -moz-box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
-    box-shadow: 0px 6px 12px 1px rgba(0,0,0,0.28);
- 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.button:hover {
-    background-color: #40adf7;
+#form_submit:hover {
+    background-color: #69bbf4;
     transition: all ease .5s;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
