@@ -45,7 +45,7 @@ function geocode(type, address)
 						if (type == 'from')
 						{
 							g_from_location = result.geometry.location;
-							$('#form_location_from').val(build_address(result));
+							$('#form_location_from').val(build_address(result))
 						}
 						else
 						{
