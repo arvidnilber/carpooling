@@ -65,33 +65,3 @@ function update_route()
 	}
 }
 
-/**
- * @param type "from" or "to"
- * @param str The message that will show up
- * @return void
- */
-
-function show_error(type, str)
-{
-	if (type == 'from')
-	{
-		var offset = $('#form_location_from').offset();
-	}
-	else
-	{
-		var offset = $('#form_location_to').offset();
-	}
-	;
-	$('#message_text').html(str);
-	$('#message').css('left', offset.left -= 300).css('top', offset.top += 50).show();
-}
-
-/**
- * Hides error messages
- * @return void
- */
-function clear_errors()
-{
-	$('#message').hide();
-}
-

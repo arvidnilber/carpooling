@@ -6,10 +6,10 @@ var g_directions_result;
 var g_directions_status;
 
 /**
- * Collects travelinformation. Writes out a map with a route and information about it
- * @param num_people Number of persons 
- * @param consumption The vehicles consumption per mile
- * @param price_fuel the fuels price per liter
+ * Collects travelinformation. Writes out a map with a route and information about it.
+ * @param num_people Number of persons.
+ * @param consumption The vehicles consumption per ten kilometres.
+ * @param price_fuel the fuels price per liter.
  */
 
 function get_path_and_info(location_from, location_to, num_people, consumption, price_fuel) {
@@ -49,8 +49,8 @@ function get_path_and_info(location_from, location_to, num_people, consumption, 
  * Calculates travel expenses with information based on the global object.
  * This function assumes that the latest Google Maps item is loaded.
  * @param num_people Number of people
- * @param consumption The vehicles consumption per mile
- * @param price_fuel Bthe fuels price per liter (currency is SEK)
+ * @param consumption The vehicles consumption per 10 kilometres
+ * @param price_fuel The fuels price per liter (currency is SEK)
  * @return JSON object with travel length, time, total cost, cost per person.
  */
 
