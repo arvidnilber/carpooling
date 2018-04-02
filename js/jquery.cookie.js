@@ -63,7 +63,7 @@ $('#close').click(function(e) {
         expires: 350,
         path: '/'
     });
-    return !1
+    return 
 });
 $('#reset').click(function() {
     $.removeCookie('overlay', {
