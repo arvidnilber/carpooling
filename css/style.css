@@ -7,7 +7,7 @@ textarea, input, button {
     outline: none; 
 }
 
-/*Change color of text in autofill textbox*/
+/* Change color of text in autofill textbox */
 input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
 }
@@ -28,7 +28,7 @@ input:-webkit-autofill {
   z-index: 109;
 }
 
-.splash {f
+.splash {
 	display: none;
 }
 
@@ -132,7 +132,7 @@ input:-webkit-autofill {
 }
 
 .pc-header {
-     position: fixed;
+    position: fixed;
     left: 0;
     z-index: 2;
     top: 0;
@@ -202,7 +202,6 @@ input:-webkit-autofill {
                         -ms-transition: background-color 0.2s ease-in-out;
                         transition: background-color 0.2s ease-in-out;
 					}
-                      
 
 .mobile-header {
     display: none;
@@ -233,40 +232,40 @@ input:-webkit-autofill {
 }
 
 #menuToggle {
-  display: block;
-  position: relative;
-  top: 1.3em;
-  left: 1em;
-  z-index: 0;
-  -webkit-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    top: 1.3em;
+    left: 1em;
+    z-index: 0;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 #menuToggle input {
-  display: block;
-  width: 42px;
-  height: 35px;
-  position: absolute;
-  top: -8px;
-  left: -0.8em;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2; 
-  -webkit-touch-callout: none;
+    display: block;
+    width: 42px;
+    height: 35px;
+    position: absolute;
+    top: -8px;
+    left: -0.8em;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
 }
 
 #menuToggle span {
-  display: block;
-  width: 24px;
-  height:1px;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #fff;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    display: block;
+    width: 24px;
+    height:1px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
@@ -368,7 +367,7 @@ input:-webkit-autofill {
 }
 
 #menuToggle input:checked ~ ul {
-  transform: none;
+    transform: none;
 }
 
 @media screen and (max-width:1000px) {
@@ -432,7 +431,7 @@ input:-webkit-autofill {
     }
 	
 	.container b {
-    font-weight: 500;
+        font-weight: 500;
 	}
 }
 
