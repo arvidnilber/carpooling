@@ -5,7 +5,6 @@ $(document).ready(function()
 	g_markers = new Array();
 		
 	$("#form_information").hide();
-	$(".window").hide();
 });
 
 function validate_form()
