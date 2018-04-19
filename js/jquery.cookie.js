@@ -60,7 +60,7 @@ if (!$.cookie('overlay')) {
 $('#close').click(function(e) {
 	$('.splash').fadeOut(500);
     $.cookie('overlay', {
-        expires: 350,
+        expires: 14,
         path: '/'
     });
     return 

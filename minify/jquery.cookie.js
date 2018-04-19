@@ -8,4 +8,4 @@ return document.cookie=[c(b),"=",e(f),i.expires?"; expires="+i.expires.toUTCStri
 for(var l=b?void 0:{},m=document.cookie?document.cookie.split("; "):[],n=0,o=m.length;o>n;n++){var p=m[n].split("="),q=d(p.shift()),r=p.join("=");if(b&&b===q){l=g(r,f);break}
 b||void 0===(r=g(r))||(l[q]=r)}
 return l};h.defaults={},a.removeCookie=function(b,c){return void 0===a.cookie(b)?!1:(a.cookie(b,"",a.extend({},c,{expires:-1})),!a.cookie(b))}});if(!$.cookie('overlay')){$('.splash').show()}else{$('.splash').hide()}
-$('#close').click(function(e){$('.splash').fadeOut(500);$.cookie('overlay',{expires:350,path:'/'});return!1});$('#reset').click(function(){$.removeCookie('overlay',{path:'/'});$('.splash').show()})
+$('#close').click(function(e){$('.splash').fadeOut(500);$.cookie('overlay',{expires:14,path:'/'});return});$('#reset').click(function(){$.removeCookie('overlay',{path:'/'});$('.splash').show()})
