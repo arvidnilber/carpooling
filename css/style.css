@@ -324,6 +324,7 @@ input:-webkit-autofill {
     font-weight: 300;
     height:50px;
     line-height:3em;
+    outline: 0;
     color:white;
 	font-family: 'Product Sans';
     margin:20px auto;
@@ -360,6 +361,7 @@ input:-webkit-autofill {
     box-shadow: 0 5px 40px rgba(0,0,0,.3);
     transition: 0.4s;
     background-color:#2a353a;
+    outline: 0;
 }
 
 #menu a {
