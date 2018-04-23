@@ -1,4 +1,4 @@
-(function () {
+$(function() {
   $('#swish').hide(); 
   $('#blur-overlay').removeClass('blur-in');
 
