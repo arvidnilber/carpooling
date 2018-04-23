@@ -310,7 +310,7 @@ input:-webkit-autofill {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li {
+#menu a {
     color: white;
     margin: 0;
     padding: 8px;
@@ -335,7 +335,7 @@ input:-webkit-autofill {
     transition: 0.4s;
 }
 
-#menu li:hover {
+#menu a:hover {
     -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.3);
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
     box-shadow: 0 5px 40px rgba(0,0,0,.3);
@@ -347,7 +347,7 @@ input:-webkit-autofill {
 	margin-top: 40px !important;
 }
 
-#menu li:active {
+#menu a:active {
     -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.3);
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
     box-shadow: 0 5px 40px rgba(0,0,0,.3);
@@ -355,7 +355,7 @@ input:-webkit-autofill {
     background-color:#2a353a;
 }
 
-#menu li:focus {
+#menu a:focus {
     -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.3);
     -moz-box-shadow: 0 5px 40px rgba(0,0,0,0.3);
     box-shadow: 0 5px 40px rgba(0,0,0,.3);
