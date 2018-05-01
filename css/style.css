@@ -474,6 +474,14 @@ input:-webkit-autofill {
 	width:140px;
 }
 
+#form_price_fuel {
+	width:90px;
+}
+
+#form_consumption {
+	width:90px;
+}
+
 #message_text {
 	margin-right: 20px;
 }
