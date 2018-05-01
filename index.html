@@ -14,6 +14,8 @@
     <title>Vad ska jag swisha?</title>
 
     <!-- Styling --> 
+        <link rel="stylesheet" href="css/material.css">
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="fonts/font.css">
@@ -26,7 +28,8 @@
 	<script type="text/javascript" src="./minify/geocode.js"></script>
 	<script type="text/javascript" src="./minify/travelprice.js"></script>
 	<script type="text/javascript" src="./minify/default.js"></script>
-	<script type="text/javascript" src="./js/blur.js"></script>
+	<script type="text/javascript" src="./minify/blur.js"></script>
+    <script type="text/javascript" src="./minify/material.min.js"></script>
     <script type="text/javascript" src="./minify/waves.js"></script>
 </head>
 <body>	
@@ -98,31 +101,46 @@
 							<div>
                                 <b>Hur många ska med?</b>
                                   <div>
-                                    <input name="num_people" type="text" id="form_num_people"  class="input" placeholder="Antal personer">
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input name="num_people" class="mdl-textfield__input" type="text" id="form_num_people">
+                                        <label class="mdl-textfield__label" for="form_num_people">Antal personer</label>
+                                    </div>	
                                   </div>
 							</div>
 							<div>
 								<b>Var åker ni ifrån?</b>
 								<div>
-								    <input name="location_from" placeholder="Ort" class="input" type="text" id="form_location_from" onblur="geocode('from', this.value);"/>
+                                     <div class="mdl-textfield mdl-js-textfield">
+                                        <input name="location_from" class="mdl-textfield__input" type="text" id="form_location_from" onblur="geocode('from', this.value);">
+                                        <label class="mdl-textfield__label" for="form_location_from">Ort</label>
+                                    </div>	
 							    </div>
 							</div>
 							<div>
 								<b>Var ska ni någonstans?</b>
 								<div>
-								<input name="location_to" placeholder="Ort" class="input"  type="text" id="form_location_to" onblur="geocode('to', this.value);"/>
-							  </div>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input name="location_to" class="mdl-textfield__input" type="text" id="form_location_to" onblur="geocode('to', this.value);">
+                                        <label class="mdl-textfield__label" for="form_location_to">Ort</label>
+                                    </div>	
+							    </div>
 							</div>
 							<div>
 								<b>Vad drar eran bil? (blandad körning)</b>
 								<div>
-								<input name="consumption"  size="6" class="input" placeholder="liter/mil" type="text" id="form_consumption"/>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input name="consumption" class="mdl-textfield__input" type="text" id="form_consumption">
+                                        <label class="mdl-textfield__label" for="form_consumption">liter/mil</label>
+                                    </div>	
 							  </div>
 							</div>
 							<div>
 								<b>Vad kommer bränslet att kosta?</b>
 								<div>
-								<input name="price_fuel" placeholder="kr/liter" size="6" class="input"  type="text" id="form_price_fuel"/>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input name="price_fuel" class="mdl-textfield__input" type="text" id="form_price_fuel">
+                                        <label class="mdl-textfield__label" for="form_price_fuel">kr/liter</label>
+                                    </div>	
 							  </div>
 							</div>
 							<button type="submit" class="button waves-effect waves-light waves-float btn-submit" id="form_submit" value="Vad kostar resan?" onclick="onSubmit()">
