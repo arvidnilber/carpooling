@@ -10095,7 +10095,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     height: 1px;
     left: 45%;
     position: absolute;
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     visibility: hidden;
     width: 10px; }
