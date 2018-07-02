@@ -180,6 +180,17 @@
             document.getElementById('form_submit').style.backgroundColor = "#2ecc71";
 		}
 	</script>
+
+<script>
+	$('a').click(function (e) {
+	e.preventDefault();                   // prevent default anchor behavior
+	var goTo = this.getAttribute("href"); // store anchor href
+
+	setTimeout(function(){
+		window.location = goTo;
+	},300);       
+	}); 
+</script>
     
 	<!-- To hide the welcome message after seeing it once --> 
 	<script type="text/javascript" src="./minify/jquery.cookie.js"></script>
